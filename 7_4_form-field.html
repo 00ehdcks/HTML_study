@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Field</title>
+  </head>
+  <body>
+    <h2>Form 속성</h2>
+    <form action="">
+      <fieldset>
+        <legend>Text Area</legend>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="비어있을때 표시될 문장"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Select</legend>
+        <select name="test" id="test">
+          <option value="1">1번 옵션</option>
+          <option value="2">2번 옵션</option>
+          <option value="3">3번 옵션</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Select Multiple</legend>
+        <select name="test" id="test" multiple>
+          <option value="1">1번 옵션</option>
+          <option value="2">2번 옵션</option>
+          <option value="3">3번 옵션</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>datalist</legend>
+        <label for="ice-cream-choice">맛 선택</label>
+        <input
+          list="ice-cream-flavors"
+          id="ice-cream-choice"
+          name="ice-cream-choice"
+        />
+        <datalist id="ice-cream-flavors">
+          <option value="Chocolate"></option>
+          <option value="Coconut"></option>
+          <option value="Mint"></option>
+        </datalist>
+      </fieldset>
+      <button type="submit">제출하기</button>
+      <button type="reset">초기화하기</button>
+      <button type="button" onclick="alert('onclick이벤트입니다.')">
+        일반 버튼
+      </button>
+    </form>
+  </body>
+</html>

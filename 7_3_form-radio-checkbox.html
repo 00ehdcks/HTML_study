@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Radio and CheckBox</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>좋아하는 색 모두 선택</legend>
+        <ul>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" name="red" id="red" />
+          </li>
+          <li>
+            <label for="blue">파랑</label>
+            <input type="checkbox" name="blue" id="blue" />
+          </li>
+          <li>
+            <label for="green">초록</label>
+            <input type="checkbox" name="green" id="green" />
+          </li>
+          <li>
+            <label for="black">검정</label>
+            <input type="checkbox" name="black" id="black" />
+          </li>
+          <li>
+            <label for="white">하양</label>
+            <input type="checkbox" name="white" id="white" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>좋아하는 색 1개 선택</legend>
+        <ul>
+          <li>
+            <label for="orange">주황</label>
+            <input type="radio" name="color" id="orange" />
+          </li>
+          <li>
+            <label for="yello">노랑</label>
+            <input type="radio" name="color" id="yello" />
+          </li>
+          <li>
+            <label for="purple">보라</label>
+            <input type="radio" name="color" id="purple" />
+          </li>
+          <li>
+            <label for="gray">회색</label>
+            <input type="radio" name="color" id="gray" />
+          </li>
+          <li>
+            <label for="other">name값이 다르면 중복으로 선택가능해진다</label>
+            <input type="radio" name="color2" id="other" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
